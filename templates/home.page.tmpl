@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Learning Go Web</title>
-    <style>
+{{template "base" .}}
+
+{{define "css"}}
+
+<style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -57,13 +55,15 @@
             color: #6c757d;
         }
     </style>
-</head>
-<body>
-    <div class="container">
+
+{{end}}
+
+{{define "content"}}
+<div class="container">
         <h1>Welcome to Learning Go Web</h1>
 
         <div class="welcome">
-            <h2>=€ Your Go Web Development Journey Starts Here</h2>
+            <h2>=ï¿½ Your Go Web Development Journey Starts Here</h2>
             <p>This is a simple Go web application built to learn web development with Go. Explore the features and see what you can build!</p>
         </div>
 
@@ -74,17 +74,17 @@
             </div>
 
             <div class="feature">
-                <h3>=Ä Template Engine</h3>
+                <h3>=ï¿½ Template Engine</h3>
                 <p>Using Go's html/template package for dynamic content rendering.</p>
             </div>
 
             <div class="feature">
-                <h3><¨ Responsive Design</h3>
+                <h3><ï¿½ Responsive Design</h3>
                 <p>Clean, modern CSS that works on desktop and mobile devices.</p>
             </div>
 
             <div class="feature">
-                <h3>¡ Fast Performance</h3>
+                <h3>ï¿½ Fast Performance</h3>
                 <p>Leveraging Go's compiled nature for lightning-fast response times.</p>
             </div>
         </div>
@@ -98,5 +98,5 @@
             <p>&copy; 2024 Learning Go Web - Built with d and Go</p>
         </footer>
     </div>
-</body>
-</html>
+
+{{end}}
