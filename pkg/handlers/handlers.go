@@ -1,12 +1,13 @@
-package main
+package handlers
 
 import (
 	"fmt"
+	"github.com/learninggoweb/go-course/pkg/render"
 	"net/http"
 )
 
 func Home(w http.ResponseWriter, r *http.Request) {
-	renderTemplate(w, "home.page.tmpl")
+	render.RenderTemplate(w, "home.page.tmpl")
 }
 
 func OldHome(w http.ResponseWriter, r *http.Request) {

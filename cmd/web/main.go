@@ -2,6 +2,8 @@ package main
 
 import (
 	"net/http"
+
+	"github.com/learninggoweb/go-course/pkg/handlers"
 )
 
 const (
@@ -9,7 +11,7 @@ const (
 )
 
 func main() {
-	http.HandleFunc("/", Home)
+	http.HandleFunc("/", handlers.Home)
 
 	_ = http.ListenAndServe(port, nil)
 }
